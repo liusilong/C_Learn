@@ -12,6 +12,7 @@
 // 方法签名
 int add(int a, int b);
 
+// function
 int max(int num1, int num2){
     int result;
     if(num1 > num2){
@@ -26,6 +27,15 @@ double cube(double num){
     double result = num * num * num;
     return result;
 }
+
+// 定义一个结构体
+struct Student {
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
+};
+
 int main(){
 //    printf
     
@@ -187,16 +197,107 @@ int main(){
 //    sayHi("Rose", 36);
     
     /* Return Statement */
-    printf("Answer: %lf \n", cube(3.0));
-    
-    printf("3 + 2 = %d \n", add(3, 2));
+//    printf("Answer: %lf \n", cube(3.0));
+//
+//    printf("3 + 2 = %d \n", add(3, 2));
     
     /* If Statement */
     
-    printf("%d \n", max(40, 10));
+//    printf("%d \n", max(40, 10));
     
+    
+    /* Building a Better Calculator */
+    
+    /*
+    double num1;
+    double num2;
+    char op;
+    
+    printf("Enter a number: ");
+    scanf("%lf", &num1);
+    printf("Enter operator: ");
+    scanf(" %c", &op);
+    printf("Enter a number: ");
+    scanf("%lf", &num2);
+    
+    if(op == '+') {
+        printf("%f \n", num1 + num2);
+    }else if(op == '-') {
+        printf("%f \n", num1 - num2);
+    }else if(op == '/'){
+        printf("%f \n", num1 / num2);
+    }else if(op == '*'){
+        printf("%f \n", num1 * num2);
+    }else{
+        printf("Invalid Operator  \n");
+    }
+    */
+    
+    /*  Switch Statements   */
+    
+    /*
+    char grade = 'C';
+    switch (grade) {
+        case 'A':
+            printf("You did great! ");
+            break;
+        case 'B':
+            printf("You did alright");
+            break;
+        case 'C':
+            printf("You did poorly");
+            break;
+        case 'D':
+            printf("You did very bad");
+            break;
+        case 'F':
+            printf("You Failed");
+            break;
+        default:
+            printf("Invalid Grade");
+            break;
+    }
+     */
+    
+    /* Structs */
+    /*
+    // 声明 Student 结构体
+    struct Student student1;
+    student1.age = 22;
+    student1.gpa = 3.7;
+    // 给 结构体中的 name 赋值 ，不能直接 student1.name = "Liusilong"
+    strcpy(student1.name, "Liusilong");
+    strcpy(student1.major, "Computer science");
+    
+    struct Student student2;
+    student1.age = 22;
+    student1.gpa = 3.7;
+    // 给 结构体中的 name 赋值 ，不能直接 student2.name = "Liusilong"
+    strcpy(student1.name, "Rose");
+    strcpy(student1.major, "Business");
+    
+    printf("%s \n", student1.name);
+     */
+
+    
+    /*  while loop  */
+    /*
+    int index = 1;
+    while (index <= 5) {
+        printf("%d \n", index);
+        index++;
+    }
+    printf("---------\n");
+    int index2 = 6;
+    do {
+        printf("%d \n", index);
+        index2++;
+    } while (index <= 5);
+     */
     return 0;
 }
+
+
 
 /*
  https://stackoverflow.com/questions/15850042/xcode-warning-implicit-declaration-of-function-is-invalid-in-c99
