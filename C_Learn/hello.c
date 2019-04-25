@@ -294,6 +294,90 @@ int main(){
         index2++;
     } while (index <= 5);
      */
+    
+    /*  Building a Guessing Game    */
+    
+    /*
+    int secretNumber = 9;
+    int guess = 0;
+    int guessCount = 0;
+    int guessLimit = 3;
+    int outOfGuess = 0;
+    
+    while (guess != secretNumber && outOfGuess == 0) {
+        if(guessCount < guessLimit) {
+            printf("Enter a number: ");
+            scanf("%d", &guess);
+            guessCount++;
+        }else{
+            outOfGuess = 1;
+        }
+    }
+    if(outOfGuess == 1) {
+        printf("Out of guess \n");
+    }else {
+      printf("You Win! \n");
+    }
+     */
+    
+    
+    /*  For loop */
+    
+//    int i = 1;
+//    while (i <= 5) {
+//        printf("%d\n", i);
+//        i++;
+//    }
+    
+//    for(int i = 0; i < 5; i++){
+//        printf("%d\n", i);
+//    }
+    
+//    int luckyNumbers[] = {9, 8, 4, 2, 20};
+//    for (int i = 0; i< 5; i++) {
+//        printf("%d \t", luckyNumbers[i]);
+//    }
+    
+    /*  2D Arrays & Nested Loops */
+    
+    /*
+    // 定义一个 3 行 2 列的二维数组
+    int nums[3][2] = {{1,2}, {3,4}, {5,6}};
+    // 遍历 nums
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d, ", nums[i][j]);
+        }
+        printf("\n");
+    }
+     */
+    
+    /*  Memory  Address */
+    
+    /*
+    int age = 30;
+    double gpa = 9.9;
+    char grade = 'A';
+    // 打印上述变量的 内存地址
+    printf("age: %p \ngpa: %p\ngrade: %p\n", &age, &gpa, &grade);
+     */
+    
+    /*  Point  指针*/
+    // 可以把指针当做一种数据类型，它保存的是内存地址
+    
+    int age = 30;
+    // 声明一个 int 类型的指针，保存 age 的内存地址
+    int * pAge = &age;
+    
+    double gpa = 4.8;
+    // 声明一个 double 类型的指针，保存 gpa 的内存地址
+    double * pGpa = &gpa;
+    
+    char grade = 'A';
+    // 声明一个 char 类型的指针，保存 grade 的内存地址
+    char * pGrade = &grade;
+    // 获取指针所保存的内存地址上的数据
+    printf("%d \n", *pAge);
     return 0;
 }
 
